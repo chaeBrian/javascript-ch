@@ -1,0 +1,81 @@
+header{
+    z-index: 100;
+}
+.tab-pane h4{
+    padding: 2vh 5vh;
+    background-image: url(../img/h4-bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: repeat;
+}
+.card-subtitle{
+    display: none;
+}
+.table{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10vh;
+}
+.table__jerseys{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.table__jerseys img{  
+  width: 13vh;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+.table__price p {
+    margin: 30px 0 0 0;
+    font-weight: 600;
+}
+.table__quantity input{
+    margin-top: 25px;
+    width: 10vh;
+    border: 1px solid gray;
+    border-radius: 3px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.table__quantity button{
+    padding: 2px 10px;
+    margin-bottom: 5px;
+}
+.table__total{
+    background-color: black;
+    padding: 0;
+}
+.table__total div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+.table__total h3{
+    font-size: large;
+    width: auto;
+    margin: 0;
+    margin: auto 0;
+}
+.table__total div button{
+    padding: 1px 13px;
+    margin: 1vh 20vh 1vh 1vh;
+    background-color: #01ff86;
+    border: 1px solid black;
+    color: black;
+    font-weight: 600;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: black;
+    background-color: #ebff05;
+}
+.nav-link {
+    color: rgb(0, 0, 0);
+}
+.nav-link:hover {
+    color: rgb(0, 0, 0);
+}
+.button:hover{
+    background-color: rgb(23, 23, 23);
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <header class="container-fluid bg-light position-sticky top-0 p-3">
+        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Jerseys</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Shop Cart</a>
+            </li>
+        </ul>
+    </header>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+            tabindex="0"><button type="button" class="btn btn-warning m-5">Comming Soon</button></div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <h4 class="h4 text-light">Today's Stock</h4>
+            <!-- Cards de productos -->
+            <div>
+                <div class="card__container d-flex justify-content-center w-100 flex-wrap m-auto">
+                    <div class="card m-3" style="width: 15rem;">
+                        <img src="img/chelsea.webp" class="card-img-top" alt="Chelsea Jersey">
+                        <div class="card-body">
+                            <h5 class="card-title">$114</h5>
+                            <h5 class="card-subtitle">Chelsea Nike 2021/22 Third</h5>
+                            <p class="card-text">Chelsea Nike 2021/22 Third Vapor Match Authentic Jersey - Blue</p>
+                            <button class="btn btn-dark button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card m-3" style="width: 15rem;">
+                        <img src="img/dortmund.webp" class="card-img-top" alt="Borussia Dortmund Jersey">
+                        <div class="card-body">
+                            <h5 class="card-title">$115</h5>
+                            <h5 class="card-subtitle">Borussia Dortmund Puma 2021/22 Home</h5>
+                            <p class="card-text">Borussia Dortmund Puma 2021/22 Home Replica Jersey - Yellow/Black</p>
+                            <button class="btn btn-dark button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card m-3" style="width: 15rem;">
+                        <img src="img/liverpool.webp" class="card-img-top" alt="Liverpool Jersey">
+                        <div class="card-body">
+                            <h5 class="card-title">$116</h5>
+                            <h5 class="card-subtitle">Liverpool Nike 2021/22 Home</h5>
+                            <p class="card-text">Liverpool Nike 2021/22 Home Breathe Stadium Replica Jersey - Red</p>
+                            <button class="btn btn-dark button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card m-3" style="width: 15rem;">
+                        <img src="img/psg.webp" class="card-img-top" alt="Paris SG Jersey">
+                        <div class="card-body">
+                            <h5 class="card-title">$117</h5>
+                            <h5 class="card-subtitle">Paris Saint-Germain Jordan Brand 2021/22 Fourth</h5>
+                            <p class="card-text">Paris Saint-Germain Jordan Brand 2021/22 Fourth Replica Jersey - White
+                            </p>
+                            <button class="btn btn-dark button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card m-3" style="width: 15rem;">
+                        <img src="img/boston.webp" class="card-img-top" alt="Bonston Celtics Jersey">
+                        <div class="card-body">
+                            <h5 class="card-title">$118</h5>
+                            <h5 class="card-subtitle">Boston Celtics Fanatics Branded</h5>
+                            <p class="card-text">Boston Celtics Fanatics Branded Fast Break Custom Replica Jersey Kelly
+                                Green</p>
+                            <button class="btn btn-dark button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card m-3" style="width: 15rem;">
+                        <img src="img/brooklyn.webp" class="card-img-top" alt="Brooklyn Nets Jersey">
+                        <div class="card-body">
+                            <h5 class="card-title">$119</h5>
+                            <h5 class="card-subtitle">Brooklyn Nets Fanatics Branded 2019/20</h5>
+                            <p class="card-text">Brooklyn Nets Fanatics Branded 2019/20 Fast Break Replica Jersey Black
+                            </p>
+                            <button class="btn btn-dark button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card m-3" style="width: 15rem;">
+                        <img src="img/dallas.webp" class="card-img-top" alt="Dallas Mavericks Jersey">
+                        <div class="card-body">
+                            <h5 class="card-title">$120</h5>
+                            <h5 class="card-subtitle">Dallas Mavericks Nike 2020/21</h5>
+                            <p class="card-text">Luka Doncic Dallas Mavericks Nike 2020/21 Swingman Jersey Royal</p>
+                            <button class="btn btn-dark button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card m-3" style="width: 15rem;">
+                        <img src="img/spurs.webp" class="card-img-top" alt="San Antonio Spurs Jersey">
+                        <div class="card-body">
+                            <h5 class="card-title">$121</h5>
+                            <h5 class="card-subtitle">San Antonio Spurs Mitchell & Ness 1998/99</h5>
+                            <p class="card-text">San Antonio Spurs Mitchell & Ness 1998/99 Hardwood Classics Fadeaway
+                                Swingman</p>
+                            <button class="btn btn-dark button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card m-3" style="width: 15rem;">
+                        <img src="img/dolphins.webp" class="card-img-top" alt="Miami Dolphins Jersey">
+                        <div class="card-body">
+                            <h5 class="card-title">$122</h5>
+                            <h5 class="card-subtitle">Miami Dolphins Nike Alternate</h5>
+                            <p class="card-text">Tyreek Hill Miami Dolphins Nike Alternate Game Jersey - Aqua</p>
+                            <button class="btn btn-dark button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card m-3" style="width: 15rem;">
+                        <img src="img/panthers.webp" class="card-img-top" alt="Carolina Panthers Jersey">
+                        <div class="card-body">
+                            <h5 class="card-title">$123</h5>
+                            <h5 class="card-subtitle">Carolina Panthers Nike Alternate Vapor</h5>
+                            <p class="card-text">Carolina Panthers Nike Alternate Vapor Elite Player Jersey - Blue</p>
+                            <button class="btn btn-dark button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card m-3" style="width: 15rem;">
+                        <img src="img/rams.webp" class="card-img-top" alt="Los Angeles Rams Jersey">
+                        <div class="card-body">
+                            <h5 class="card-title">$124</h5>
+                            <h5 class="card-subtitle">Los Angeles Rams Nike Alternate Vapor</h5>
+                            <p class="card-text">Cooper Kupp Los Angeles Rams Nike Alternate Vapor Limited Jersey -
+                                White</p>
+                            <button class="btn btn-dark button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card m-3" style="width: 15rem;">
+                        <img src="img/vikings.webp" class="card-img-top" alt="Minesota Vikings Jersey">
+                        <div class="card-body">
+                            <h5 class="card-title">$125</h5>
+                            <h5 class="card-subtitle">Minnesota Vikings Nike</h5>
+                            <p class="card-text">Justin Jefferson Minnesota Vikings Nike Player Game Jersey - Purple</p>
+                            <button class="btn btn-dark button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+            <h4 class="h4 text-light">My Cart</h4>
+            <br>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Jerseys</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+                </tbody>
+            </table>
+            <br>
+            <div class="table__total row fixed-bottom text-light">
+                <div class="row">
+                    <h3 class="itemCartTotal">Total: 0</h3>
+                    <div class="d-flex w-auto">
+                        <button class="btn">Comfirm Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!-- Mi documento js -->
+    <script src="js/scripts.js"></script>
+    <!-- Toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>
