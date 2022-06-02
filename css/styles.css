@@ -1,12 +1,13 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 header{
     z-index: 100;
 }
 .tab-pane h4{
     padding: 2vh 5vh;
-    background-image: url(../img/h4-bg.jpg);
+    background-image: url(../img/bgcard.webp);
     background-size: cover;
-    background-position: bottom;
-    background-repeat: repeat;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .card-subtitle{
     display: none;
@@ -16,32 +17,31 @@ header{
     margin: 0 auto;
     margin-bottom: 10vh;
 }
-.table__jerseys{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 .table__jerseys img{  
-  width: 13vh;
+  width: 12vh;
   object-fit: contain;
   border-radius: 6px;
   margin-right: 20px;
 }
 .table__price p {
-    margin: 30px 0 0 0;
+    margin: 0;
     font-weight: 600;
 }
 .table__quantity input{
-    margin-top: 25px;
     width: 10vh;
     border: 1px solid gray;
     border-radius: 3px;
     text-align: center;
-    background-color: antiquewhite;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 .table__quantity button{
     padding: 2px 10px;
     margin-bottom: 5px;
+    font-weight: 100;
+}
+.table__quantity button i{
+    font-weight: bolder !important;
 }
 .table__total{
     background-color: black;
@@ -68,7 +68,7 @@ header{
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: black;
-    background-color: #ebff05;
+    background-color: #d27dff;
 }
 .nav-link {
     color: rgb(0, 0, 0);
@@ -76,6 +76,43 @@ header{
 .nav-link:hover {
     color: rgb(0, 0, 0);
 }
+.button{
+    margin-top: 0.5rem;
+}
 .button:hover{
     background-color: rgb(23, 23, 23);
+}
+.premierLeagueThead tr th{
+    color: gray;
+    font-weight: 100;
+    font-size: small;
+    text-align: center;
+}
+.premierLeagueTable tr img{
+    width: 1.5rem;
+}
+.premierPosition{
+    text-align: center;
+    font-size: small;
+}
+.premierClub span{
+    margin-left: 1rem;
+}
+.premierStats{
+    font-size: smaller;
+    text-align: center;
+}
+.premierStats--modifier{
+    font-size: small;
+    font-weight: 600;
+    text-align: center;
+}
+.card-img-overlay{
+    background-color: rgba(0, 0, 0, 0.581);
+}
+.card-text{
+    margin: 0;
+}
+.card__champion{
+    width: 90%;
 }

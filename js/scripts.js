@@ -1,12 +1,35 @@
-const buttonClick = document.querySelectorAll('.button');
 let tbody = document.querySelector('.tbody');
 let shopCart = [];
-//Evento click sobre el Add to Cart
+//API Premier League (Table)
+let matches = document.getElementById("matches");
+let urlApi = "https://api-football-standings.azharimm.site/leagues/eng.1/standings?season=2021&sort=asc";
+fetch(urlApi)
+.then(res => res.json())
+.then((json) => {
+    for (const club of json.data.standings){
+        let trApi = document.createElement("tr");
+        trApi.innerHTML = `
+            <td class="premierPosition">${club.stats[8].displayValue}</td>
+            <td class="premierClub d-flex flex-row"><img class="img-fluid" src="${club.team.logos[0].href}" alt=""><span>${club.team.shortDisplayName}</span></td>
+            <td class="premierStats">${club.stats[3].displayValue}</td>
+            <td class="premierStats">${club.stats[0].displayValue}</td>
+            <td class="premierStats">${club.stats[2].displayValue}</td>
+            <td class="premierStats">${club.stats[1].displayValue}</td>
+            <td class="premierStats">${club.stats[4].displayValue}</td>
+            <td class="premierStats">${club.stats[5].displayValue}</td>
+            <td class="premierStats">${club.stats[9].displayValue}</td>
+            <td class="premierStats--modifier">${club.stats[6].displayValue}</td>
+        `
+        document.getElementById("matches").append(trApi);
+    }
+});
+//Evento click sobre el Add to Cart.
+const buttonClick = document.querySelectorAll('.button');
 buttonClick.forEach(btn => { btn.addEventListener('click', addToCartItem)});
 function addToCartItem(e){
     //Notificacion generada al agregar un producto al carrito.
     Toastify({
-        text: "Jersey added to Cart",
+        text: "Jersey added to Bag",
         offset: {
           x: 10, // horizontal axis - can be a number or a string indicating unity. eg: '2em'
           y: -3 // vertical axis - can be a number or a string indicating unity. eg: '2em'
@@ -45,7 +68,7 @@ function addItemCart(newItem){
     shopCart.push(newItem);
     renderCart()
 }
-//Subida de elementos al DOM.
+//Subida de elementos al carrtio mediante DOM.
 function renderCart(){
     tbody.innerHTML = '';
     shopCart.map(item => {
@@ -60,7 +83,7 @@ function renderCart(){
             <td class="table__price"><p>${item.price}</p></td>
             <td class="table__quantity">
                 <input class='quantity--counter' type="number" min="1" value="${item.quantity}">
-                <button class="delete btn btn-danger">Delete</button>
+                <button class="delete btn btn-danger"><i class="bi bi-backspace"></i></button>
             </td>
             `
         tr.innerHTML = Content;
@@ -78,13 +101,13 @@ function shopCartTotal(){
         const price = Number(item.price.replace("$", ''));
         total = total + price * item.quantity;
     })
-    itemCartTotal.innerHTML = `Total: $${total}`;
+    itemCartTotal.innerHTML = `$${total}`;
     addlocalStorage()
 }
 //Eliminar productos del carrito de compras.
 function removeItemShopCart(e){
     Toastify({
-        text: "Jersey removed from Cart",
+        text: "Jersey removed from Bag",
         offset: {
           x: 10, // horizontal axis - can be a number or a string indicating unity. eg: '2em'
           y: -3 // vertical axis - can be a number or a string indicating unity. eg: '2em'

@@ -12,28 +12,190 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- Toastify -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
 
 <body>
-    <header class="container-fluid bg-light position-sticky top-0 p-3">
+    <header class="container-fluid bg-light position-sticky top-0 p-1">
+        <nav class="navbar navbar-expand-lg bg-light p-0">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Premier League</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bundesliga</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">League 1</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <ul class="nav nav-pills" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
                 <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+                        class="bi bi-trophy"></i></a>
             </li>
             <li class="nav-item" role="presentation">
                 <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Jerseys</a>
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+                        class="bi bi-shop"></i></a>
             </li>
             <li class="nav-item" role="presentation">
                 <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Shop Cart</a>
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><i
+                        class="bi bi-bag"></i></a>
             </li>
         </ul>
     </header>
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-            tabindex="0"><button type="button" class="btn btn-warning m-5">Comming Soon</button></div>
+            tabindex="0">
+            <section class="container">
+                <div class="row">
+                    <div class="col-7">
+                        <img class="w-50" src="img/premierleaguelogo.webp" alt="">
+                        <table class="table m-3">
+                            <thead class="premierLeagueThead">
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Club</th>
+                                    <th scope="col">Played</th>
+                                    <th scope="col">Won</th>
+                                    <th scope="col">Drawn</th>
+                                    <th scope="col">Lost</th>
+                                    <th scope="col">GF</th>
+                                    <th scope="col">GA</th>
+                                    <th scope="col">GD</th>
+                                    <th scope="col">Points</th>
+                                </tr>
+                            </thead>
+                            <tbody class="premierLeagueTable" id="matches">
+                            </tbody>
+                        </table>
+                        <h5 class="h6 ms-4"><i class="bi bi-trophy me-2"></i>Premier League Champion Season 21/22</h5>
+                        <div class="card bg-light text-white ms-3 card__champion">
+                            <img src="img/bgcardschampion.webp" class="card-img" alt="...">
+                            <div class="card-img-overlay d-flex justify-content-between p-0">
+                                <div class="d-flex flex-column p-2">
+                                    <h5 class="card-title h3">Manchester City</h5>
+                                    <p class="card-text">Wins: 29</p>
+                                    <p class="card-text">Draws: 6</p>
+                                    <p class="card-text">Goals: 99</p>
+                                    <p class="card-text">Clean Sheets: 21</p>
+                                    <p class="card-text">Manager: Josep Guardiola</p>
+                                </div>
+                                <img class="img-fluid me-3" src="img/logochampion.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex flex-column">
+                        <p class="align-self-end">Premier League Awards Season 21/22 <i class="bi bi-calendar3"></i></p>
+                        <h5 class="h6 ms-4"><i class="bi bi-award me-2"></i>Player of the Season</h5>
+                        <div class="card bg-light text-white">
+                            <img src="img/bgcards.webp" class="card-img" alt="...">
+                            <div class="card-img-overlay d-flex justify-content-between p-0">
+                                <div class="d-flex flex-column p-2">
+                                    <h5 class="card-title h3">Kevin De Bruyne</h5>
+                                    <p class="card-text">Appearances: 30</p>
+                                    <p class="card-text">Goals: 15</p>
+                                    <p class="card-text">Assists: 8</p>
+                                    <p class="card-text">Manchester City • Forward</p>
+                                </div>
+                                <img class="img-fluid me-3" src="img/seasonplayer.png" alt="">
+                            </div>
+                        </div>
+                        <h5 class="h6 ms-4 mt-3"><i class="bi bi-award me-2"></i>Manager of the Season</h5>
+                        <div class="card bg-light text-white w-100">
+                            <img src="img/bgcards.webp" class="card-img" alt="...">
+                            <div class="card-img-overlay d-flex justify-content-between p-0">
+                                <div class="d-flex flex-column p-2">
+                                    <h5 class="card-title h3">Jürgen Klopp</h5>
+                                    <p class="card-text">Won: 28</p>
+                                    <p class="card-text">Draws: 8</p>
+                                    <p class="card-text">Goals For: 94</p>
+                                    <p class="card-text">Liverpool • Manager</p>
+                                </div>
+                                <img class="img-fluid me-3" src="img/seasonmanager.png" alt="">
+                            </div>
+                        </div>
+                        <h5 class="h6 ms-4 mt-3"><i class="bi bi-award me-2"></i>Young Player of the Season</h5>
+                        <div class="card bg-light text-white w-100">
+                            <img src="img/bgcards.webp" class="card-img" alt="...">
+                            <div class="card-img-overlay d-flex justify-content-between p-0">
+                                <div class="d-flex flex-column p-2">
+                                    <h5 class="card-title h3">Phil Foden</h5>
+                                    <p class="card-text">Appearances: 28</p>
+                                    <p class="card-text">Goals: 9</p>
+                                    <p class="card-text">Assists: 5</p>
+                                    <p class="card-text">Newcastle City • Midfielder</p>
+                                </div>
+                                <img class="img-fluid me-3" src="img/seasonyoung.png" alt="">
+                            </div>
+                        </div>
+                        <h5 class="h6 ms-4 mt-3"><i class="bi bi-award me-2"></i>Golden Boot</h5>
+                        <div class="card bg-light text-white w-100">
+                            <img src="img/bgcardsgboot.webp" class="card-img" alt="...">
+                            <div class="card-img-overlay d-flex justify-content-between p-0">
+                                <div class="d-flex flex-column p-2">
+                                    <h5 class="card-title h3">Son Heung-Min</h5>
+                                    <p class="card-text">Appearances: 35</p>
+                                    <p class="card-text">Goals: 23</p>
+                                    <p class="card-text">Tottenham Hotspur • Forward</p>
+                                </div>
+                                <img class="img-fluid me-3" src="img/gbootseason.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card bg-light text-white w-100">
+                            <img src="img/bgcardsgboot.webp" class="card-img" alt="...">
+                            <div class="card-img-overlay d-flex justify-content-between p-0">
+                                <div class="d-flex flex-column p-2">
+                                    <h5 class="card-title h3">Mohamed Salah</h5>
+                                    <p class="card-text">Appearances: 35</p>
+                                    <p class="card-text">Goals: 23</p>
+                                    <p class="card-text">Liverpool • Forward</p>
+                                </div>
+                                <img class="img-fluid me-3" src="img/gbootseason2.png" alt="">
+                            </div>
+                        </div>
+                        <h5 class="h6 ms-4 mt-3"><i class="bi bi-award me-2"></i>Golden Glove</h5>
+                        <div class="card bg-light text-white w-100">
+                            <img src="img/bgcardsgglove.webp" class="card-img" alt="...">
+                            <div class="card-img-overlay d-flex justify-content-between p-0">
+                                <div class="d-flex flex-column p-2">
+                                    <h5 class="card-title h3">Alisson</h5>
+                                    <p class="card-text">Appearances: 36</p>
+                                    <p class="card-text">Clean Sheets: 20</p>
+                                    <p class="card-text">Liverpool • Gaolkeeper</p>
+                                </div>
+                                <img class="img-fluid me-3" src="img/ggloveseason.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card bg-light text-white w-100">
+                            <img src="img/bgcardsgglove.webp" class="card-img" alt="...">
+                            <div class="card-img-overlay d-flex justify-content-between p-0">
+                                <div class="d-flex flex-column p-2">
+                                    <h5 class="card-title h3">Ederson</h5>
+                                    <p class="card-text">Appearances: 37</p>
+                                    <p class="card-text">Clean Sheets: 20</p>
+                                    <p class="card-text">Manchester City • Goalkeeper</p>
+                                </div>
+                                <img class="img-fluid me-3" src="img/ggloveseason2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
             <h4 class="h4 text-light">Today's Stock</h4>
             <!-- Cards de productos -->
@@ -42,139 +204,176 @@
                     <div class="card m-3" style="width: 15rem;">
                         <img src="img/chelsea.webp" class="card-img-top" alt="Chelsea Jersey">
                         <div class="card-body">
-                            <h5 class="card-title">$114</h5>
+                            <h5 class="card-title">$10</h5>
                             <h5 class="card-subtitle">Chelsea Nike 2021/22 Third</h5>
                             <p class="card-text">Chelsea Nike 2021/22 Third Vapor Match Authentic Jersey - Blue</p>
-                            <button class="btn btn-dark button">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="card m-3" style="width: 15rem;">
-                        <img src="img/dortmund.webp" class="card-img-top" alt="Borussia Dortmund Jersey">
-                        <div class="card-body">
-                            <h5 class="card-title">$115</h5>
-                            <h5 class="card-subtitle">Borussia Dortmund Puma 2021/22 Home</h5>
-                            <p class="card-text">Borussia Dortmund Puma 2021/22 Home Replica Jersey - Yellow/Black</p>
-                            <button class="btn btn-dark button">Add to Cart</button>
+                            <button class="btn btn-dark button">Add to Bag</button>
                         </div>
                     </div>
                     <div class="card m-3" style="width: 15rem;">
                         <img src="img/liverpool.webp" class="card-img-top" alt="Liverpool Jersey">
                         <div class="card-body">
-                            <h5 class="card-title">$116</h5>
+                            <h5 class="card-title">$10</h5>
                             <h5 class="card-subtitle">Liverpool Nike 2021/22 Home</h5>
                             <p class="card-text">Liverpool Nike 2021/22 Home Breathe Stadium Replica Jersey - Red</p>
-                            <button class="btn btn-dark button">Add to Cart</button>
+                            <button class="btn btn-dark button">Add to Bag</button>
                         </div>
                     </div>
                     <div class="card m-3" style="width: 15rem;">
-                        <img src="img/psg.webp" class="card-img-top" alt="Paris SG Jersey">
+                        <img src="img/arsenal.webp" class="card-img-top" alt="Arsenal Jersey">
                         <div class="card-body">
-                            <h5 class="card-title">$117</h5>
-                            <h5 class="card-subtitle">Paris Saint-Germain Jordan Brand 2021/22 Fourth</h5>
-                            <p class="card-text">Paris Saint-Germain Jordan Brand 2021/22 Fourth Replica Jersey - White
+                            <h5 class="card-title">$10</h5>
+                            <h5 class="card-subtitle">Arsenal adidas 2021 Away</h5>
+                            <p class="card-text">Arsenal adidas 2021 Away Replica Jersey - Pearl Citrine</p>
+                            <button class="btn btn-dark button">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="card m-3" style="width: 15rem;">
+                        <img src="img/astonvilla.webp" class="card-img-top" alt="Aston Villa Jersey">
+                        <div class="card-body">
+                            <h5 class="card-title">$10</h5>
+                            <h5 class="card-subtitle">Aston Villa Kappa 2021/22 Home</h5>
+                            <p class="card-text">Aston Villa Kappa 2021/22 Home Authentic Jersey - Maroon</p>
+                            <button class="btn btn-dark button">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="card m-3" style="width: 15rem;">
+                        <img src="img/city.webp" class="card-img-top" alt="Man City Jersey">
+                        <div class="card-body">
+                            <h5 class="card-title">$10</h5>
+                            <h5 class="card-subtitle">Manchester City Puma 2022/23 Home</h5>
+                            <p class="card-text">Manchester City Puma 2022/23 Home Replica Blank Jersey - Sky Blue</p>
+                            <button class="btn btn-dark button">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="card m-3" style="width: 15rem;">
+                        <img src="img/everton.webp" class="card-img-top" alt="Everton Jersey">
+                        <div class="card-body">
+                            <h5 class="card-title">$10</h5>
+                            <h5 class="card-subtitle">Everton 2021/22 Home</h5>
+                            <p class="card-text">Everton 2021/22 Home Replica Jersey - Blue</p>
+                            <button class="btn btn-dark button">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="card m-3" style="width: 15rem;">
+                        <img src="img/united.webp" class="card-img-top" alt="Man United Jersey">
+                        <div class="card-body">
+                            <h5 class="card-title">$10</h5>
+                            <h5 class="card-subtitle">Manchester United adidas 2021/22 Home</h5>
+                            <p class="card-text">Manchester United adidas 2021/22 Home Authentic Jersey - Red</p>
+                            <button class="btn btn-dark button">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="card m-3" style="width: 15rem;">
+                        <img src="img/tottenham.webp" class="card-img-top" alt="Tottenham Jersey">
+                        <div class="card-body">
+                            <h5 class="card-title">$10</h5>
+                            <h5 class="card-subtitle">Tottenham Hotspur Nike 2021/22 Third</h5>
+                            <p class="card-text">Tottenham Hotspur Nike 2021/22 Third Stadium Replica Jersey - Purple
                             </p>
-                            <button class="btn btn-dark button">Add to Cart</button>
+                            <button class="btn btn-dark button">Add to Bag</button>
                         </div>
                     </div>
                     <div class="card m-3" style="width: 15rem;">
-                        <img src="img/boston.webp" class="card-img-top" alt="Bonston Celtics Jersey">
+                        <img src="img/newcaslte.webp" class="card-img-top" alt="Newcastle Jersey">
                         <div class="card-body">
-                            <h5 class="card-title">$118</h5>
-                            <h5 class="card-subtitle">Boston Celtics Fanatics Branded</h5>
-                            <p class="card-text">Boston Celtics Fanatics Branded Fast Break Custom Replica Jersey Kelly
-                                Green</p>
-                            <button class="btn btn-dark button">Add to Cart</button>
+                            <h5 class="card-title">$10</h5>
+                            <h5 class="card-subtitle">Newcastle United 2021-22 Away</h5>
+                            <p class="card-text">Newcastle United 2021-22 Away Stadium Replica Jersey - Black</p>
+                            <button class="btn btn-dark button">Add to Bag</button>
                         </div>
                     </div>
                     <div class="card m-3" style="width: 15rem;">
-                        <img src="img/brooklyn.webp" class="card-img-top" alt="Brooklyn Nets Jersey">
+                        <img src="img/westham.webp" class="card-img-top" alt="West Ham Jersey">
                         <div class="card-body">
-                            <h5 class="card-title">$119</h5>
-                            <h5 class="card-subtitle">Brooklyn Nets Fanatics Branded 2019/20</h5>
-                            <p class="card-text">Brooklyn Nets Fanatics Branded 2019/20 Fast Break Replica Jersey Black
-                            </p>
-                            <button class="btn btn-dark button">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="card m-3" style="width: 15rem;">
-                        <img src="img/dallas.webp" class="card-img-top" alt="Dallas Mavericks Jersey">
-                        <div class="card-body">
-                            <h5 class="card-title">$120</h5>
-                            <h5 class="card-subtitle">Dallas Mavericks Nike 2020/21</h5>
-                            <p class="card-text">Luka Doncic Dallas Mavericks Nike 2020/21 Swingman Jersey Royal</p>
-                            <button class="btn btn-dark button">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="card m-3" style="width: 15rem;">
-                        <img src="img/spurs.webp" class="card-img-top" alt="San Antonio Spurs Jersey">
-                        <div class="card-body">
-                            <h5 class="card-title">$121</h5>
-                            <h5 class="card-subtitle">San Antonio Spurs Mitchell & Ness 1998/99</h5>
-                            <p class="card-text">San Antonio Spurs Mitchell & Ness 1998/99 Hardwood Classics Fadeaway
-                                Swingman</p>
-                            <button class="btn btn-dark button">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="card m-3" style="width: 15rem;">
-                        <img src="img/dolphins.webp" class="card-img-top" alt="Miami Dolphins Jersey">
-                        <div class="card-body">
-                            <h5 class="card-title">$122</h5>
-                            <h5 class="card-subtitle">Miami Dolphins Nike Alternate</h5>
-                            <p class="card-text">Tyreek Hill Miami Dolphins Nike Alternate Game Jersey - Aqua</p>
-                            <button class="btn btn-dark button">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="card m-3" style="width: 15rem;">
-                        <img src="img/panthers.webp" class="card-img-top" alt="Carolina Panthers Jersey">
-                        <div class="card-body">
-                            <h5 class="card-title">$123</h5>
-                            <h5 class="card-subtitle">Carolina Panthers Nike Alternate Vapor</h5>
-                            <p class="card-text">Carolina Panthers Nike Alternate Vapor Elite Player Jersey - Blue</p>
-                            <button class="btn btn-dark button">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="card m-3" style="width: 15rem;">
-                        <img src="img/rams.webp" class="card-img-top" alt="Los Angeles Rams Jersey">
-                        <div class="card-body">
-                            <h5 class="card-title">$124</h5>
-                            <h5 class="card-subtitle">Los Angeles Rams Nike Alternate Vapor</h5>
-                            <p class="card-text">Cooper Kupp Los Angeles Rams Nike Alternate Vapor Limited Jersey -
-                                White</p>
-                            <button class="btn btn-dark button">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="card m-3" style="width: 15rem;">
-                        <img src="img/vikings.webp" class="card-img-top" alt="Minesota Vikings Jersey">
-                        <div class="card-body">
-                            <h5 class="card-title">$125</h5>
-                            <h5 class="card-subtitle">Minnesota Vikings Nike</h5>
-                            <p class="card-text">Justin Jefferson Minnesota Vikings Nike Player Game Jersey - Purple</p>
-                            <button class="btn btn-dark button">Add to Cart</button>
+                            <h5 class="card-title">$10</h5>
+                            <h5 class="card-subtitle">West Ham United 20-21 Away</h5>
+                            <p class="card-text">West Ham United 20-21 Away Shirt - Replica Jersey - Light Blue</p>
+                            <button class="btn btn-dark button">Add to Bag</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-            <h4 class="h4 text-light">My Cart</h4>
-            <br>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">Jerseys</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Quantity</th>
-                    </tr>
-                </thead>
-                <tbody class="tbody">
-                </tbody>
-            </table>
-            <br>
-            <div class="table__total row fixed-bottom text-light">
-                <div class="row">
-                    <h3 class="itemCartTotal">Total: 0</h3>
-                    <div class="d-flex w-auto">
-                        <button class="btn">Comfirm Order</button>
+            <h4 class="h4 text-light">Your Bag</h4>
+            <div class="d-flex flex-row">
+                <table class="table w-75 m-1 table-bordere">
+                    <thead>
+                        <tr>
+                            <th scope="col">Jerseys</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                    </tbody>
+                </table>
+                <div class="m-1 me-2">
+                    <!-- Button trigger modal -->
+                    <div class="card" style="width: 25rem; border-radius: 0;">
+                        <img src="img/banner.jpg" class="card-img-top" alt="..." style="border-radius: 0;">
+                        <div class="card-body">
+                            <h5 class="card-title">Order Summary</h5>
+                            <p class="card-text"></p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex flex-row justify-content-between">
+                                <p>Estimated Delivery:</p><span class="text-danger fw-bold">FREE</span>
+                            </li>
+                            <li class="list-group-item d-flex flex-row justify-content-between">
+                                <p>Total:</p><span class="itemCartTotal fw-bold">0</span>
+                            </li>
+                        </ul>
+                        <div class="card-body d-flex flex-row justify-content-center">
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Proced to Checkout
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="btn-group-vertical w-100" role="group"
+                                        aria-label="Vertical radio toggle button group">
+                                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1"
+                                            autocomplete="off" checked="">
+                                        <label class="btn btn-outline-dark" for="vbtn-radio1"><i
+                                                class="bi bi-credit-card-2-back me-2"></i>New credit Card</label>
+                                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark" for="vbtn-radio2"><i
+                                                class="bi bi-credit-card-2-back me-2"></i>New debit Card</label>
+                                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark" for="vbtn-radio3"><i
+                                                class="bi bi-credit-card-2-back me-2"></i>Other Payment options</label>
+                                    </div>
+                                    <div class="card text-bg-dark mt-1 w-100">
+                                        <div class="card-header">Last payment Adress</div>
+                                        <div class="card-body">
+                                            <p class="card-text">Av. Pres. Figueroa Alcorta 7597</p>
+                                            <p class="card-text">C1428</p>
+                                            <p class="card-text">Ciudad de Buenos Aires</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
