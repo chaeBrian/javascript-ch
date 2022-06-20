@@ -1,0 +1,82 @@
+[
+    {
+        "plimg":"./img/seasonplayer.png",
+        "plbg":"./img/bgcards.webp",
+        "plaward":"Player of the Season",
+        "plname":"Kevin De Bruyne",
+        "plstat1":"Appearances: 30",
+        "plstat2":"Goals: 15",
+        "plstat3":"Assists: 8",
+        "plplayerrole":"Manchester City • Forward"
+    },
+    {
+        "plimg":"./img/seasonmanager.png",
+        "plbg":"./img/bgcards.webp",
+        "plaward":"Manager of the Season",
+        "plname":"Jürgen Klopp",
+        "plstat1":"Won: 28",
+        "plstat2":"Draws: 8",
+        "plstat3":"Goals For: 94",
+        "plplayerrole":"Liverpool • Manager"
+    },
+    {
+        "plimg":"./img/seasonyoung.png",
+        "plbg":"./img/bgcards.webp",
+        "plaward":"Y. P. of the Season",
+        "plname":"Phil Foden",
+        "plstat1":"Appearances: 28",
+        "plstat2":"Goals: 9",
+        "plstat3":"Assists: 5",
+        "plplayerrole":"Manchester City • Midfielder"
+    },
+    {
+        "plimg":"./img/gbootseason2.png",
+        "plbg":"./img/bgcardsgglove.webp",
+        "plaward":"Playmaker",
+        "plname":"Mohamed Salah",
+        "plstat1":"Appareances: 35",
+        "plstat2":"Assists: 13",
+        "plstat3":"Goals: 23",
+        "plplayerrole":"Liverpool • Forward"
+    },
+    {
+        "plimg":"./img/gbootseason.png",
+        "plbg":"./img/bgcardsgboot.webp",
+        "plaward":"Golden Boot",
+        "plname":"Son Heung-Min",
+        "plstat1":"Appareances: 35",
+        "plstat2":"Goals: 23",
+        "plstat3":"",
+        "plplayerrole":"Tottenham Hotspur • Forward"
+    },
+    {
+        "plimg":"./img/gbootseason2.png",
+        "plbg":"./img/bgcardsgboot.webp",
+        "plaward":"Golden Boot",
+        "plname":"Mohamed Salah",
+        "plstat1":"Appareances: 35",
+        "plstat2":"Goals: 23",
+        "plstat3":"",
+        "plplayerrole":"Liverpool • Forward"
+    },
+    {
+        "plimg":"./img/ggloveseason.png",
+        "plbg":"./img/bgcardsgglove.webp",
+        "plaward":"Golden Glove",
+        "plname":"Alisson",
+        "plstat1":"Appareances: 36",
+        "plstat2":"Clean Sheets: 20",
+        "plstat3":"",
+        "plplayerrole":"Liverpool • Goalkeeper"
+    },
+    {
+        "plimg":"./img/ggloveseason2.png",
+        "plbg":"./img/bgcardsgglove.webp",
+        "plaward":"Golden Glove",
+        "plname":"Edersson",
+        "plstat1":"Appareances: 37",
+        "plstat2":"Clean Sheets: 20",
+        "plstat3":"",
+        "plplayerrole":"Manchester City • Goalkeeper"
+    }
+]

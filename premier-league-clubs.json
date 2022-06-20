@@ -1,0 +1,342 @@
+[
+    {
+        "team":{
+            "name":"Manchester City",
+            "clubpage":"https://es.mancity.com/",
+            "logo":{
+                "href": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                    "full",
+                    "default"
+                    ],
+                "lastUpdated": "2019-05-08T16:07Z"
+            }
+        }
+    },
+    {
+        "team":{
+            "name":"Liverpool",
+            "clubpage":"https://www.liverpoolfc.com/",
+            "logo":{
+                "href": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                    "full",
+                    "default"
+                    ],
+                "lastUpdated": "2019-05-08T16:07Z"
+            }
+        }
+    },
+    {
+        "team":{
+            "name":"Chelsea",
+            "clubpage":"https://www.chelsea.com.ar/",
+            "logo":{
+                "href": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                    "full",
+                    "default"
+                    ],
+                "lastUpdated": "2019-05-08T16:07Z"
+            }
+        }
+    },
+    {
+        "team":{
+            "name":"Tottenham Hotspur",
+            "clubpage":"https://www.tottenhamhotspur.com/",
+            "logo":{
+                "href": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                    "full",
+                    "default"
+                    ],
+                "lastUpdated": "2019-05-08T16:07Z"
+            }
+        }
+    },
+    {
+        "team":{
+            "name":"Arsenal",
+            "clubpage":"https://www.arsenal.com/",
+            "logo":{
+                "href": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                    "full",
+                    "default"
+                    ],
+                "lastUpdated": "2019-05-08T16:07Z"
+            }
+        }
+    },
+    {
+        "team":{
+            "name":"Manchester United",
+            "clubpage":"https://www.manutd.com/",
+            "logo":{
+                "href": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                    "full",
+                    "default"
+                    ],
+                "lastUpdated": "2019-05-08T16:07Z"
+            }
+        }
+    },
+    {
+        "team":{
+            "name":"West Ham United",
+            "clubpage":"https://www.whufc.com/",
+            "logo":{
+                "href": "https://a.espncdn.com/i/teamlogos/soccer/500/371.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                    "full",
+                    "default"
+                    ],
+                "lastUpdated": "2019-05-08T16:07Z"
+            }
+        }
+    },
+    {
+        "team":{
+            "name":"Leicester City",
+            "clubpage":"https://www.lcfc.com/",
+            "logo":{
+                "href": "https://a.espncdn.com/i/teamlogos/soccer/500/375.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                    "full",
+                    "default"
+                    ],
+                "lastUpdated": "2019-05-08T16:07Z"
+            }
+        }
+    },
+    {
+        "team":{
+            "name":"Brighton & Hove Albion",
+            "clubpage":"https://www.brightonandhovealbion.com/",
+            "logo":{
+                "href": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                    "full",
+                    "default"
+                    ],
+                "lastUpdated": "2019-05-08T16:07Z"
+            }
+        }
+    },
+    {
+        "team":{
+            "name":"Wolverhampton Wanderers",
+            "clubpage":"https://www.wolves.co.uk/",
+            "logo":{
+                "href": "https://a.espncdn.com/i/teamlogos/soccer/500/380.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                    "full",
+                    "default"
+                    ],
+                "lastUpdated": "2019-05-08T16:07Z"
+            }
+        }
+    },
+    {
+        "team":{
+            "name":"Newcastle United",
+            "clubpage":"https://www.nufc.co.uk/",
+            "logo":{
+                "href": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                    "full",
+                    "default"
+                    ],
+                "lastUpdated": "2019-05-08T16:07Z"
+            }
+        }
+    },
+    {
+        "team":{
+            "name":"Crystal Palace",
+            "clubpage":"https://www.cpfc.co.uk/",
+            "logo":{
+                "href": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                    "full",
+                    "default"
+                    ],
+                "lastUpdated": "2019-05-08T16:07Z"
+            }
+        }
+    },
+    {
+        "team":{
+            "name":"Brentford",
+            "clubpage":"https://www.brentfordfc.com/",
+            "logo":{
+                "href": "https://a.espncdn.com/i/teamlogos/soccer/500/337.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                    "full",
+                    "default"
+                    ],
+                "lastUpdated": "2020-07-16T16:13Z"
+            }
+        }
+    },
+    {
+        "team":{
+            "name":"Aston Villa",
+            "clubpage":"https://www.avfc.co.uk/",
+            "logo":{
+                "href": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                    "full",
+                    "default"
+                    ],
+                "lastUpdated": "2019-05-08T16:07Z"
+            }
+        }
+    },
+    {
+        "team":{
+            "name":"Southampton",
+            "clubpage":"https://www.southamptonfc.com/",
+            "logo":{
+                "href": "https://a.espncdn.com/i/teamlogos/soccer/500/376.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                    "full",
+                    "default"
+                    ],
+                "lastUpdated": "2019-05-08T16:07Z"
+            }
+        }
+    },
+    {
+        "team":{
+            "name":"Everton",
+            "clubpage":"https://www.evertonfc.com/home",
+            "logo":{
+                "href": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                    "full",
+                    "default"
+                    ],
+                "lastUpdated": "2019-05-08T16:07Z"
+            }
+        }
+    },
+    {
+        "team":{
+            "name":"Leeds United",
+            "clubpage":"https://www.leedsunited.com/",
+            "logo":{
+                "href": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                    "full",
+                    "default"
+                    ],
+                "lastUpdated": "2019-05-08T16:07Z"
+            }
+        }
+    },
+    {
+        "team":{
+            "name":"Bournemouth",
+            "clubpage":"https://www.afcb.co.uk/",
+            "logo":{
+                "href": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                    "full",
+                    "default"
+                    ],
+                "lastUpdated": "2019-05-08T16:07Z"
+            }
+        }
+    },
+    {
+        "team":{
+            "name":"Nottingham Forest",
+            "clubpage":"",
+            "logo":{
+                "href":"https://a.espncdn.com/i/teamlogos/soccer/500/393.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                    "full",
+                    "default"
+                    ],
+                "lastUpdated": "2019-05-08T16:07Z"
+            }
+        }
+    },
+    {
+        "team":{
+            "name":"Fulham",
+            "clubpage":"",
+            "logo":{
+                "href":"https://a.espncdn.com/i/teamlogos/soccer/500/370.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                    "full",
+                    "default"
+                    ],
+                "lastUpdated": "2019-05-08T16:07Z"
+            }
+        }
+    }
+]

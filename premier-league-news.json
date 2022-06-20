@@ -1,0 +1,20 @@
+[
+    {
+        "newsTittle":"Premier League club summmer 2022 friendly fixtures",
+        "newsLink":"https://www.premierleague.com/news/2554997",
+        "newsCatg":"News",
+        "newsImg":"./img/news-img2.webp"
+    },
+    {
+        "newsTittle":"Premier League kits revealed for 2022/23",
+        "newsLink":"https://www.premierleague.com/news/2611397",
+        "newsCatg":"Feature",
+        "newsImg":"./img/news-img1.webp"
+    },
+    {
+        "newsTittle":"Summer 2022 Transfers & News",
+        "newsLink":"https://www.premierleague.com/news/2602004",
+        "newsCatg":"Transfers",
+        "newsImg":"./img/news-img3.webp"
+    }
+]

@@ -16,29 +16,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
 
-<body>
+<body class="bg-light">
     <header class="container-fluid bg-light position-sticky top-0 p-1">
-        <nav class="navbar navbar-expand-lg bg-light p-0">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Premier League</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Bundesliga</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">League 1</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <ul class="nav justify-content-center" id="premierLeagueClubsId">
+            <li class="nav-item mt-auto mb-auto">
+                <a class="nav-link disabled" style="font-size: x-small;">CLUB SITES <i
+                        class="bi bi-box-arrow-up-right"></i></a>
+            </li>
+        </ul>
         <ul class="nav nav-pills" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
                 <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
@@ -60,136 +45,88 @@
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
             tabindex="0">
+            <div class="col-12 d-flex flex-row justify-content-around align-items-center" id="timer"></div>
             <section class="container">
                 <div class="row">
-                    <div class="col-7">
-                        <img class="w-50" src="img/premierleaguelogo.webp" alt="">
-                        <table class="table m-3">
-                            <thead class="premierLeagueThead">
-                                <tr>
-                                    <th scope="col"></th>
-                                    <th scope="col">Club</th>
-                                    <th scope="col">Played</th>
-                                    <th scope="col">Won</th>
-                                    <th scope="col">Drawn</th>
-                                    <th scope="col">Lost</th>
-                                    <th scope="col">GF</th>
-                                    <th scope="col">GA</th>
-                                    <th scope="col">GD</th>
-                                    <th scope="col">Points</th>
-                                </tr>
-                            </thead>
-                            <tbody class="premierLeagueTable" id="matches">
-                            </tbody>
-                        </table>
-                        <h5 class="h6 ms-4"><i class="bi bi-trophy me-2"></i>Premier League Champion Season 21/22</h5>
-                        <div class="card bg-light text-white ms-3 card__champion">
-                            <img src="img/bgcardschampion.webp" class="card-img" alt="...">
-                            <div class="card-img-overlay d-flex justify-content-between p-0">
-                                <div class="d-flex flex-column p-2">
-                                    <h5 class="card-title h3">Manchester City</h5>
-                                    <p class="card-text">Wins: 29</p>
-                                    <p class="card-text">Draws: 6</p>
-                                    <p class="card-text">Goals: 99</p>
-                                    <p class="card-text">Clean Sheets: 21</p>
-                                    <p class="card-text">Manager: Josep Guardiola</p>
+                    <div class="col-12 card bg-light text-white ms-3 card__champion border-0">
+                        <img src="img/background-premier-cup.png" class="card-img border-0" alt="...">
+                        <div class="card-img-overlay d-flex justify-content-center p-0 border-0">
+                            <div class="d-flex flex-column p-2 border-0">
+                                <img class="w-75 ms-auto" src="img/premierleaguelogo.webp" alt="">
+                                <div class="premierTextCard">
+                                    <h5 class="card-title h3">Season 21/22 Champion</h5>
+                                    <p class="card-text fs-6">Wins: 29</p>
+                                    <p class="card-text fs-6">Draws: 6</p>
+                                    <p class="card-text fs-6">Goals: 99</p>
+                                    <p class="card-text fs-6">Clean Sheets: 21</p>
+                                    <br>
+                                    <p class="card-text fs-6">Manager: Josep Guardiola</p>
                                 </div>
-                                <img class="img-fluid me-3" src="img/logochampion.png" alt="">
                             </div>
+                            <img class="img-fluid" src="img/logochampion.png" alt="">
                         </div>
                     </div>
-                    <div class="col d-flex flex-column">
-                        <p class="align-self-end">Premier League Awards Season 21/22 <i class="bi bi-calendar3"></i></p>
-                        <h5 class="h6 ms-4"><i class="bi bi-award me-2"></i>Player of the Season</h5>
-                        <div class="card bg-light text-white">
-                            <img src="img/bgcards.webp" class="card-img" alt="...">
-                            <div class="card-img-overlay d-flex justify-content-between p-0">
-                                <div class="d-flex flex-column p-2">
-                                    <h5 class="card-title h3">Kevin De Bruyne</h5>
-                                    <p class="card-text">Appearances: 30</p>
-                                    <p class="card-text">Goals: 15</p>
-                                    <p class="card-text">Assists: 8</p>
-                                    <p class="card-text">Manchester City • Forward</p>
-                                </div>
-                                <img class="img-fluid me-3" src="img/seasonplayer.png" alt="">
+                    <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/carousel-1.webp" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/carousel-2.webp" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/carousel-3.webp" class="d-block w-100" alt="...">
                             </div>
                         </div>
-                        <h5 class="h6 ms-4 mt-3"><i class="bi bi-award me-2"></i>Manager of the Season</h5>
-                        <div class="card bg-light text-white w-100">
-                            <img src="img/bgcards.webp" class="card-img" alt="...">
-                            <div class="card-img-overlay d-flex justify-content-between p-0">
-                                <div class="d-flex flex-column p-2">
-                                    <h5 class="card-title h3">Jürgen Klopp</h5>
-                                    <p class="card-text">Won: 28</p>
-                                    <p class="card-text">Draws: 8</p>
-                                    <p class="card-text">Goals For: 94</p>
-                                    <p class="card-text">Liverpool • Manager</p>
-                                </div>
-                                <img class="img-fluid me-3" src="img/seasonmanager.png" alt="">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="row">
+                        <div class="col-7 p-0">
+                            <table class="table m-3">
+                                <thead class="premierLeagueThead">
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Club</th>
+                                        <th scope="col">Played</th>
+                                        <th scope="col">Won</th>
+                                        <th scope="col">Drawn</th>
+                                        <th scope="col">Lost</th>
+                                        <th scope="col">GF</th>
+                                        <th scope="col">GA</th>
+                                        <th scope="col">GD</th>
+                                        <th scope="col">Points</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="premierLeagueTable" id="matches">
+                                </tbody>
+                            </table>
+                            <h4 class="h4 text-light mt-1 mb-1">Latest News</h4>
+                            <div id="premierLeagueNewsId">
                             </div>
                         </div>
-                        <h5 class="h6 ms-4 mt-3"><i class="bi bi-award me-2"></i>Young Player of the Season</h5>
-                        <div class="card bg-light text-white w-100">
-                            <img src="img/bgcards.webp" class="card-img" alt="...">
-                            <div class="card-img-overlay d-flex justify-content-between p-0">
-                                <div class="d-flex flex-column p-2">
-                                    <h5 class="card-title h3">Phil Foden</h5>
-                                    <p class="card-text">Appearances: 28</p>
-                                    <p class="card-text">Goals: 9</p>
-                                    <p class="card-text">Assists: 5</p>
-                                    <p class="card-text">Newcastle City • Midfielder</p>
+                        <div class="col-5">
+                            <h4 class="h4 text-light mt-1 mb-1">Premier League Awards 21/22</h4>
+                            <div class="container p-0">
+                                <div class="row" id="premierLeagueCards">
+
                                 </div>
-                                <img class="img-fluid me-3" src="img/seasonyoung.png" alt="">
-                            </div>
-                        </div>
-                        <h5 class="h6 ms-4 mt-3"><i class="bi bi-award me-2"></i>Golden Boot</h5>
-                        <div class="card bg-light text-white w-100">
-                            <img src="img/bgcardsgboot.webp" class="card-img" alt="...">
-                            <div class="card-img-overlay d-flex justify-content-between p-0">
-                                <div class="d-flex flex-column p-2">
-                                    <h5 class="card-title h3">Son Heung-Min</h5>
-                                    <p class="card-text">Appearances: 35</p>
-                                    <p class="card-text">Goals: 23</p>
-                                    <p class="card-text">Tottenham Hotspur • Forward</p>
-                                </div>
-                                <img class="img-fluid me-3" src="img/gbootseason.png" alt="">
-                            </div>
-                        </div>
-                        <div class="card bg-light text-white w-100">
-                            <img src="img/bgcardsgboot.webp" class="card-img" alt="...">
-                            <div class="card-img-overlay d-flex justify-content-between p-0">
-                                <div class="d-flex flex-column p-2">
-                                    <h5 class="card-title h3">Mohamed Salah</h5>
-                                    <p class="card-text">Appearances: 35</p>
-                                    <p class="card-text">Goals: 23</p>
-                                    <p class="card-text">Liverpool • Forward</p>
-                                </div>
-                                <img class="img-fluid me-3" src="img/gbootseason2.png" alt="">
-                            </div>
-                        </div>
-                        <h5 class="h6 ms-4 mt-3"><i class="bi bi-award me-2"></i>Golden Glove</h5>
-                        <div class="card bg-light text-white w-100">
-                            <img src="img/bgcardsgglove.webp" class="card-img" alt="...">
-                            <div class="card-img-overlay d-flex justify-content-between p-0">
-                                <div class="d-flex flex-column p-2">
-                                    <h5 class="card-title h3">Alisson</h5>
-                                    <p class="card-text">Appearances: 36</p>
-                                    <p class="card-text">Clean Sheets: 20</p>
-                                    <p class="card-text">Liverpool • Gaolkeeper</p>
-                                </div>
-                                <img class="img-fluid me-3" src="img/ggloveseason.png" alt="">
-                            </div>
-                        </div>
-                        <div class="card bg-light text-white w-100">
-                            <img src="img/bgcardsgglove.webp" class="card-img" alt="...">
-                            <div class="card-img-overlay d-flex justify-content-between p-0">
-                                <div class="d-flex flex-column p-2">
-                                    <h5 class="card-title h3">Ederson</h5>
-                                    <p class="card-text">Appearances: 37</p>
-                                    <p class="card-text">Clean Sheets: 20</p>
-                                    <p class="card-text">Manchester City • Goalkeeper</p>
-                                </div>
-                                <img class="img-fluid me-3" src="img/ggloveseason2.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -203,7 +140,7 @@
                 <div class="card__container d-flex justify-content-center w-100 flex-wrap m-auto">
                     <div class="card m-3" style="width: 15rem;">
                         <img src="img/chelsea.webp" class="card-img-top" alt="Chelsea Jersey">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column justify-content-between">
                             <h5 class="card-title">$10</h5>
                             <h5 class="card-subtitle">Chelsea Nike 2021/22 Third</h5>
                             <p class="card-text">Chelsea Nike 2021/22 Third Vapor Match Authentic Jersey - Blue</p>
@@ -212,7 +149,7 @@
                     </div>
                     <div class="card m-3" style="width: 15rem;">
                         <img src="img/liverpool.webp" class="card-img-top" alt="Liverpool Jersey">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column justify-content-between">
                             <h5 class="card-title">$10</h5>
                             <h5 class="card-subtitle">Liverpool Nike 2021/22 Home</h5>
                             <p class="card-text">Liverpool Nike 2021/22 Home Breathe Stadium Replica Jersey - Red</p>
@@ -221,7 +158,7 @@
                     </div>
                     <div class="card m-3" style="width: 15rem;">
                         <img src="img/arsenal.webp" class="card-img-top" alt="Arsenal Jersey">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column justify-content-between">
                             <h5 class="card-title">$10</h5>
                             <h5 class="card-subtitle">Arsenal adidas 2021 Away</h5>
                             <p class="card-text">Arsenal adidas 2021 Away Replica Jersey - Pearl Citrine</p>
@@ -230,7 +167,7 @@
                     </div>
                     <div class="card m-3" style="width: 15rem;">
                         <img src="img/astonvilla.webp" class="card-img-top" alt="Aston Villa Jersey">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column justify-content-between">
                             <h5 class="card-title">$10</h5>
                             <h5 class="card-subtitle">Aston Villa Kappa 2021/22 Home</h5>
                             <p class="card-text">Aston Villa Kappa 2021/22 Home Authentic Jersey - Maroon</p>
@@ -239,7 +176,7 @@
                     </div>
                     <div class="card m-3" style="width: 15rem;">
                         <img src="img/city.webp" class="card-img-top" alt="Man City Jersey">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column justify-content-between">
                             <h5 class="card-title">$10</h5>
                             <h5 class="card-subtitle">Manchester City Puma 2022/23 Home</h5>
                             <p class="card-text">Manchester City Puma 2022/23 Home Replica Blank Jersey - Sky Blue</p>
@@ -248,7 +185,7 @@
                     </div>
                     <div class="card m-3" style="width: 15rem;">
                         <img src="img/everton.webp" class="card-img-top" alt="Everton Jersey">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column justify-content-between">
                             <h5 class="card-title">$10</h5>
                             <h5 class="card-subtitle">Everton 2021/22 Home</h5>
                             <p class="card-text">Everton 2021/22 Home Replica Jersey - Blue</p>
@@ -257,7 +194,7 @@
                     </div>
                     <div class="card m-3" style="width: 15rem;">
                         <img src="img/united.webp" class="card-img-top" alt="Man United Jersey">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column justify-content-between">
                             <h5 class="card-title">$10</h5>
                             <h5 class="card-subtitle">Manchester United adidas 2021/22 Home</h5>
                             <p class="card-text">Manchester United adidas 2021/22 Home Authentic Jersey - Red</p>
@@ -266,7 +203,7 @@
                     </div>
                     <div class="card m-3" style="width: 15rem;">
                         <img src="img/tottenham.webp" class="card-img-top" alt="Tottenham Jersey">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column justify-content-between">
                             <h5 class="card-title">$10</h5>
                             <h5 class="card-subtitle">Tottenham Hotspur Nike 2021/22 Third</h5>
                             <p class="card-text">Tottenham Hotspur Nike 2021/22 Third Stadium Replica Jersey - Purple
@@ -276,7 +213,7 @@
                     </div>
                     <div class="card m-3" style="width: 15rem;">
                         <img src="img/newcaslte.webp" class="card-img-top" alt="Newcastle Jersey">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column justify-content-between">
                             <h5 class="card-title">$10</h5>
                             <h5 class="card-subtitle">Newcastle United 2021-22 Away</h5>
                             <p class="card-text">Newcastle United 2021-22 Away Stadium Replica Jersey - Black</p>
@@ -285,10 +222,28 @@
                     </div>
                     <div class="card m-3" style="width: 15rem;">
                         <img src="img/westham.webp" class="card-img-top" alt="West Ham Jersey">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column justify-content-between">
                             <h5 class="card-title">$10</h5>
                             <h5 class="card-subtitle">West Ham United 20-21 Away</h5>
                             <p class="card-text">West Ham United 20-21 Away Shirt - Replica Jersey - Light Blue</p>
+                            <button class="btn btn-dark button">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="card m-3" style="width: 15rem;">
+                        <img src="img/southampton.webp" class="card-img-top" alt="West Ham Jersey">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">$10</h5>
+                            <h5 class="card-subtitle">Southampton 20-21 Away</h5>
+                            <p class="card-text">Soutnhampton 20-21 Away Shirt - Replica Jersey - Yellow</p>
+                            <button class="btn btn-dark button">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="card m-3" style="width: 15rem;">
+                        <img src="img/bournemouth.webp" class="card-img-top" alt="West Ham Jersey">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">$10</h5>
+                            <h5 class="card-subtitle">Bournemouth 20-21 Away</h5>
+                            <p class="card-text">Bournemouth 20-21 Away Shirt - Replica Jersey - Green</p>
                             <button class="btn btn-dark button">Add to Bag</button>
                         </div>
                     </div>
@@ -328,7 +283,7 @@
                         <div class="card-body d-flex flex-row justify-content-center">
                             <button type="button" class="btn btn-dark" data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop">
-                                Proced to Checkout
+                                Proceed to Checkout
                             </button>
                         </div>
                     </div>
@@ -338,7 +293,7 @@
                         <div class="modal-dialog modal-dialog-scrollable">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                    <h5 class="modal-title" id="staticBackdropLabel"></h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
@@ -359,7 +314,7 @@
                                                 class="bi bi-credit-card-2-back me-2"></i>Other Payment options</label>
                                     </div>
                                     <div class="card text-bg-dark mt-1 w-100">
-                                        <div class="card-header">Last payment Adress</div>
+                                        <div class="card-header">Last payment Address</div>
                                         <div class="card-body">
                                             <p class="card-text">Av. Pres. Figueroa Alcorta 7597</p>
                                             <p class="card-text">C1428</p>
@@ -379,6 +334,14 @@
             </div>
         </div>
     </div>
+    <footer class="p-3 mt-3" style="background-color: #3b0541;">
+        <ul class="d-flex flex-column justify-content-center m-auto">
+            <li class="text-light list-unstyled m-2"><a target="_blank" href="https://github.com/chaeBrian/javascript-ch-course" class="repositorio"><i class="bi bi-github text-light"></i> Repositorio</a></li>
+            <li class="text-light list-unstyled">Brian Michel Ibañez</li>
+            <li class="text-light list-unstyled">CoderHouse Proyecto final JavaScript</li>
+            <li class="text-light list-unstyled">Comision 30360</li>
+        </ul>
+    </footer>
     <!-- Scripts -->
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
