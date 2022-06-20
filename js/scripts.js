@@ -208,7 +208,7 @@ const premierLeagueAwards = async () => {
         awardsContainer.classList.add('p-0');
         awardsContainer.innerHTML = `
         <div class="card border-0" style="width: 13rem; color: #3b0541;
-            background: url(../img/background-premier-cup.png);
+            background: url(./img/background-premier-cup.png);
             background-size: cover";
             background-position: center;>
             <img src="${premierAwards.plimg}" class="card-img-top" alt="...">
