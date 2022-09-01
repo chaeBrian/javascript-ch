@@ -131,7 +131,7 @@ window.onload = function(){
 }
 //Countdown Timer
 // establezco la fecha en la que estamos contando hacia atrás
-let countDownDate = new Date("Aug 5, 2022 16:00:00").getTime();
+let countDownDate = new Date("Aug 5, 2023 16:00:00").getTime();
 // actualizo la cuenta regresiva cada 1 segundo
 let x = setInterval(function() {
   // obtengo la fecha y hora de hoy
@@ -149,7 +149,7 @@ let x = setInterval(function() {
         href="https://www.premierleague.com/news/2646764">
         Fixtures Here
     </a>
-    <span class="fs-2 fw-bolder text-warning">Premier League 2022-23 season starts in</span>
+    <span class="fs-2 fw-bolder text-warning">Premier League 2023-24 season starts in</span>
     <div class="d-flex flex-row border border-light m-2">
         <p class="m-1"><span class="fs-6 fw-bold text-light">${days}</span><br>DAYS</p>
         <p class="m-1"><span class="fs-6 fw-bold text-light">${hours}</span><br>HRS</p>
